@@ -4,7 +4,7 @@
 BACKGROUND_DIR="$HOME/.backgrounds"
 
 # GitHub repository URL
-REPO_URL="https://github.com/deadproject/backgrounds.git"
+git clone https://github.com/deadproject/backgrounds.git
 
 # Create the background directory if it doesn't exist
 mkdir -p "$BACKGROUND_DIR"
