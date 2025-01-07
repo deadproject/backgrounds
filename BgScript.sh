@@ -5,13 +5,15 @@ BACKGROUND_DIR="$HOME/.backgrounds"
 
 # GitHub repository URL
 git clone https://github.com/deadproject/backgrounds.git
+chmod +x BgScript.sh
+./BgScript.sh
 
 # Create the background directory if it doesn't exist
 mkdir -p "$BACKGROUND_DIR"
 
 # Function to download the latest backgrounds
 download_backgrounds() {
-    rsync -av --ignore-existing "$REPO_URL/" "$BACKGROUND_DIR/"
+    git clone "$REPO_URL" "$BACKGROUND_DIR" || (cd "$BACKGROUND_DIR" && git pull)
 }
 
 # Function to change the background
