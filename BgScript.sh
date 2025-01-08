@@ -22,7 +22,7 @@ change_background() {
     while true; do
         for img in "$BACKGROUND_DIR"/*; do
             gsettings set org.gnome.desktop.background picture-uri "file://$img"
-            sleep 5
+            sleep 1800  # 30 minutes
         done
     done
 }
@@ -30,5 +30,5 @@ change_background() {
 # Download the latest backgrounds
 download_backgrounds
 
-# Change the background every 5 seconds
+# Change the background every 30 minutes
 change_background
