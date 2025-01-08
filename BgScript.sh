@@ -4,7 +4,8 @@
 BACKGROUND_DIR="$HOME/.backgrounds"
 
 # GitHub repository URL
-git clone https://github.com/deadproject/backgrounds.git
+REPO_URL="https://github.com/deadproject/backgrounds.git"
+git clone "$REPO_URL"
 chmod +x BgScript.sh
 ./BgScript.sh
 
