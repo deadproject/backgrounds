@@ -3,6 +3,6 @@ For linux
 bash <(curl -Ls https://raw.githubusercontent.com/deadproject/backgrounds/main/BgScript.sh)
 ```
 For win
-```ps1
-Still underwork
+```
+irm "https://raw.githubusercontent.com/deadproject/backgrounds/main/Bgscript.ps1" | iex
 ```
